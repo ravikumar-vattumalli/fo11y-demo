@@ -5,6 +5,7 @@ import GameCard from './GameCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import getUserUUID from '../utils/getUserUUID';
+import { withFaroProfiler } from '@grafana/faro-react';
 
 function Search() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -66,4 +67,4 @@ function Search() {
     );
 }
 
-export default Search;
+export default withFaroProfiler(Search);

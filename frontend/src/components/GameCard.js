@@ -47,7 +47,7 @@ function GameCard({ game }) {
             </div>
             <div className="game-card-details">
                 <h3 className="game-name">
-                    <a href={`https://store.steampowered.com/app/${game.id}`} target="_blank" rel="noreferrer">{game.name}</a>
+                    <a href={`/app/${game.id}`} target="_blank" rel="noreferrer">{game.name}</a>
                 </h3>
                 <p className="game-price">
                     {game.discounted && <span className="original-price">£{(game.original_price / 100).toFixed(2)}</span>}
